@@ -16,12 +16,16 @@ body {
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
+    header {
+      border-radius: 30px;
+    }
+
     .section {
       border-radius: 20px;
       background-color: #EEF4FD;
       margin-bottom: 30px;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 20%;
+      padding-right: 20%;
       padding-bottom: 10%;
       padding-top: 20px;
       box-shadow: #0A0606;
@@ -40,6 +44,24 @@ body {
       margin-bottom: 5.5%;
       margin-top: 2%;
       text-underline-position: under;
+    }
+
+    .section img {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: auto;
+    }
+
+  .lilpadding {
+      padding-left: 35%;
+      padding-right: 35%;
+
+      padding: 10px;
+    }
+    .card-padding
+    {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .form {
@@ -61,6 +83,7 @@ body {
       border-bottom-right-radius: 35px;
       border-bottom-left-radius: 35px;
       font-family: 'Plus Jakarta Sans', sans-serif;
+      border-radius: 30px;
     }
 
     .jumbotron .btn{
@@ -71,6 +94,7 @@ body {
       padding-right: 10%;
       padding-bottom: 10%;
       padding-top: 20px;
+      border-radius: 30px;
     }
 
     .jumbotron h1 {
@@ -137,31 +161,36 @@ body {
     }
 
     .image-container img {
-      width: 80%;
+      width: 100%;
       height: auto;
       border-radius: 8px;
     }
 
-    .section-image-container {
-      Padding: 5%;
-      padding-bottom: 10%;
-    }
-    .section-container {
-      padding: 10px ;
-    }
-    .section-container .row {
-      margin-bottom: 50px;
-    }
-    .section-container img {
-      max-width: 80%;
-      max-height: 500px;
-      border-radius: 30px;
-      height: auto;
-    }
+
+
+
 
     .submissionStatus {
       padding-top: 30px;
     }
+.altcard {
+    border: 2px solid #084BB8;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+    .card-img-container {
+  padding: 10px;
+  text-align: center;
+  
+                        }
+
+.card-img-top {
+max-width: 75%;
+
+}
 
   </style>
 </head>
@@ -202,18 +231,18 @@ body {
       <!--Start Jumbotron image array-->
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="image-container">
+          <div class="col-md-4 image-fluid">
+            <div class="image-container ">
               <img src = "images/IMG_0706.JPG"></image>
             </div>  
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 image-fluid">
             <div class="image-container">
               <img src = "images/IMG_0721.JPG"></image>
             </div>
           </div>
-          <div class="col-md-4">   
-            <div class="image-container">
+          <div class="col-md-4 image-fluid">   
+            <div class="image-container ">
               <img src = "images/IMG_0740.JPG"></image>
             </div>
           </div>     
@@ -240,23 +269,23 @@ body {
     <h2 class="section-title text-center"><p>DANCERS,</p> <p>WELCOME HOME</p></h2>
   </div>  
   <div class="container section-container">
-      <div class="row ">
-        <div class="col-md-6" >
+      <div class="row">
+        <div class="col-md-5" >
           <div class = "image-container section-image-container">
             <img src = "images/Whitagram-Image.JPG"></image>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 lilpadding">
           <p class="h4">Search, Apply, and Connect directly with companies looking specifically for dancers. Stay up-to-date with classes and events in your local area.</p>
         </div>
       </div>
       <div class="row ">
-        <div class="col-md-6">
+        <div class="col-md-6 lilpadding">
           <p class="h4">Professional Dancers, looking to excel their career, now have a place to be in the know of paid gigs from teaching, choreography, and performance opportunities. Leave reviews for companies you’ve worked with to exhibit how well they treat their talent and uphold a professional standard.</p>
         </div>
-        <div class="col-md-6" >
+        <div class="col-md-6 " >
           <div class = "image-container section-image-container">
-            <img src = "images/performance1.JPG"></image>
+            <img src = "images/IMG_0733.JPG"></image>
           </div>
         </div> 
       </div>
@@ -265,6 +294,91 @@ body {
 <!--End Dancer Section-->
 
 <!--Dancer Card Array-->
+<div class="container card-padding">
+  <div class="row justify-content-center">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class=" altcard">
+        <div class="card-img-container">
+          <img src="images\fprofile1.JPG" class="card-img-top rounded-circle" alt="Profile Image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">August Cane</h5>
+          <p class="card-text text-center">San Francisco, CA</p>
+          <p class="card-text text-center">Style:</p>
+          <ul class="list-unstyled text-center">
+            <li>Contemporary</li>
+            <li>Tap</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Studio</li>
+            <li>Music Video</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Add more card elements as needed -->
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="altcard">
+        <div class="card-img-container">
+          <img src="images\fprofile2.JPG" class="card-img-top rounded-circle" alt="Profile Image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Leslie Salerno</h5>
+          <p class="card-text text-center">Washington, DC</p>
+          <p class="card-text text-center">Dance Styles:</p>
+          <ul class="list-unstyled text-center">
+            <li>Latin</li>
+            <li>Ballroom</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Opportunity 1</li>
+            <li>Opportunity 2</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+
+
+    </div>
+     </div>
+
+     
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="altcard">
+        <div class="card-img-container">
+          <img src="images\fprofile1.JPG" class="card-img-top rounded-circle" alt="Profile Image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Dancer Name</h5>
+          <p class="card-text text-center">City, State</p>
+          <p class="card-text text-center">Dance Styles:</p>
+          <ul class="list-unstyled text-center">
+            <li>Dance Style 1</li>
+            <li>Dance Style 2</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Opportunity 1</li>
+            <li>Opportunity 2</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+
+        
+
+
+    </div>
+     </div>
+
+</div>
+</div>
+
 
 <!--Business section-->
 <section id="Companies Section" class="container section shadow">
@@ -278,13 +392,13 @@ body {
             <img src = "images\2004C1DD-BD18-421B-9AEF-CEFCEBE79E09.JPG"></image>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 lilpadding">
           <p class = "h4">Search, Hire, and Connect directly to dancers that fit the role you are looking for. 
                            No more paying outrageous fees, scrambling through Social Media, and running out of your personal network.</p>
         </div>
       </div>
       <div class="row ">
-        <div class="col-md-6">
+        <div class="col-md-6 lilpadding">
           <p class = h4>Companies, looking for professional dancers, can now search a database full of talent that can be filtered by style,
                         location, types of opportunities, and pay grade. Event pages can be created to not only market directly to the dance 
                          community, but also directly hire the perfect talent for that event.</p>
@@ -309,6 +423,8 @@ body {
         <option value="Dancer">Company</option>
       </select>
     </div>
+
+  <div class = "row"> 
     <div class="form-group">
       <label for="firstName">First Name</label>
       <input type="text" class="form-control" id="firstName" name="firstName" required>
@@ -317,6 +433,7 @@ body {
       <label for="lastName">Last Name</label>
       <input type="text" class="form-control" id="lastName" name="lastName" required>
     </div>
+  </div>   
     <div class="form-group">
       <label for="email">Email</label>
       <input type="email" class="form-control" id="email" name="email" required>
